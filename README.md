@@ -1,8 +1,9 @@
 # Sales Data pipeline
 
-Kafka is a distributed streaming platform (message broker) - it's primarily for storing and transporting data streams between systems.
-Spark and Flink are stream processing engines - they're for transforming and analyzing data.
-
+Must have:
+- 3 different data sources (relational db, file system and WS)
+- Top sales per city pipeline (real time aggregation)
+- top salesman in whole contry (batch aggregation)
 
 High-Level Architecture:
 Data Sources → Ingestion Layer → Processing Layer → Storage Layer → API Layer
