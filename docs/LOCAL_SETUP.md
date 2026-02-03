@@ -1,14 +1,15 @@
 # Local Setup Guide
 
-This guide covers the installation of Terraform and Kubernetes tools for local development.
+This guide covers the installation of Terraform, Kubernetes tools, and Helm for local development.
 
 ## OS Requirements
 
-| Tool | Linux | macOS | Windows |
-|------|-------|-------|---------|
-| Terraform | Ubuntu 18.04+, Debian 10+, RHEL 7+, CentOS 7+ | macOS 10.15+ | Windows 10+ |
-| kubectl | Kernel 3.10+ | macOS 10.15+ | Windows 10+ |
-| Minikube | 2 CPUs, 2GB RAM, 20GB disk | 2 CPUs, 2GB RAM, 20GB disk | 2 CPUs, 2GB RAM, 20GB disk |
+| Tool | Linux | macOS |
+|------|-------|-------|
+| Terraform | Ubuntu 18.04+, Debian 10+, RHEL 7+, CentOS 7+ | macOS 10.15+ |
+| kubectl | Kernel 3.10+ | macOS 10.15+ |
+| Minikube | 2 CPUs, 2GB RAM, 20GB disk | 2 CPUs, 2GB RAM, 20GB disk |
+| Helm | glibc-based Linux | macOS 10.15+ |
 
 ### Prerequisites
 
@@ -100,6 +101,27 @@ minikube start --cpus=4 --memory=8192 --driver=docker
 
 ---
 
+## Helm Installation
+
+Helm is the package manager for Kubernetes, used to deploy complex applications like Kafka (Strimzi), Spark operator, and Flink.
+
+### Linux
+
+```bash
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
+
+### macOS
+
+```bash
+brew install helm
+```
+
+### Verify Installation
+
+```bash
+helm version
+```
 ---
 
 ## Verify Setup
@@ -111,7 +133,13 @@ terraform --version
 # Check kubectl
 kubectl version --client
 
+# Check Helm
+helm version
+
 # Check cluster connection (after starting minikube or kind)
 kubectl cluster-info
 kubectl get nodes
+
+# Check Helm repos
+helm repo list
 ```
