@@ -1,0 +1,10 @@
+# Strimzi Kafka operator Helm values.
+# Full reference: helm show values strimzi/strimzi-kafka-operator
+
+# Number of operator replicas
+replicas: 1
+
+# Restrict operator to watch only the kafka namespace (safer than cluster-wide)
+watchAnyNamespace: false
+
+logLevel: INFO
