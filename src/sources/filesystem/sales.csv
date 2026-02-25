@@ -1,0 +1,16 @@
+sale_id,product_name,city,salesman,amount,sale_date
+1,Laptop,New York,Alice Smith,1200.00,2024-01-15
+2,Smartphone,Los Angeles,Bob Jones,800.00,2024-01-15
+3,Headphones,Chicago,Carol White,150.00,2024-01-16
+4,Tablet,Houston,David Brown,600.00,2024-01-16
+5,Smartwatch,Phoenix,Alice Smith,350.00,2024-01-17
+6,Monitor,Philadelphia,Eve Davis,400.00,2024-01-17
+7,Keyboard,San Antonio,Bob Jones,80.00,2024-01-18
+8,Mouse,San Diego,Carol White,45.00,2024-01-18
+9,Webcam,Dallas,David Brown,120.00,2024-01-19
+10,USB Hub,San Jose,Alice Smith,60.00,2024-01-19
+11,Laptop,Los Angeles,Frank Miller,1350.00,2024-01-20
+12,Smartphone,New York,Grace Wilson,750.00,2024-01-20
+13,Headphones,Chicago,Alice Smith,200.00,2024-01-21
+14,Monitor,Houston,Bob Jones,450.00,2024-01-21
+15,Tablet,Los Angeles,Carol White,700.00,2024-01-22
